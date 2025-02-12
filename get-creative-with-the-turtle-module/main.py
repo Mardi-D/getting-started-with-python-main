@@ -1,6 +1,8 @@
 import turtle as turtle
 import random
 
+
+
 print("Welcome to your drawing app! Select a shape you want to draw. After typing the number and hitting enter, go to the result tab!")
 
 turtle.penup()
@@ -26,13 +28,26 @@ turtle.forward(150)
 turtle.pendown()
 
 def star():
-  # Star
+  for i in range(0, 6):
+    turtle.pencolor('blue')
+    turtle.forward(110)
+    turtle.right(216)
+  
 
 def square():
-  # Square
-
+  for i in range(0, 4):
+    turtle.pencolor('green')
+    turtle.forward(100)
+    turtle.right(90)
+   
 def hexagon():
-  # Hexagon
+  for i in range(0, 6):
+    turtle.pencolor('purple')
+    turtle.forward(100)
+    turtle.right(60)
+
+
+  
 
 selection = input("1. Star\n2. Square\n3. Hexagon\nSelect a number: ")
 if selection == "1":
@@ -44,3 +59,6 @@ elif selection == "2":
 elif selection == "3":
   print("Excellent choice! Go to the result tab to see your creation.")
   hexagon()
+
+  turtle.done()
+  turtle.mainloop()
