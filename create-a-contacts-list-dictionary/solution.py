@@ -1,3 +1,6 @@
+
+import pprint
+
 people = ["Ann", "Chelsea", "Nichole", "Max"]
 title = ["Marketing Coordinator", "Software Developer", "Sales Representative", "Technical Writer"]
 
@@ -8,4 +11,4 @@ for i in range(len(people)):
     person_title = title[i]
     company_org[person] = person_title
 
-print(company_org)
+pprint.pprint(company_org)
